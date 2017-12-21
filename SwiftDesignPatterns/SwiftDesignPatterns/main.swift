@@ -14,9 +14,9 @@ let singleton = Singleton.singleton
 
 singleton.description()
 
+var template: TemplateMethodProtocol = ConcreteClass1()
 
-
-
+template.templateMethod()
 
 
 
