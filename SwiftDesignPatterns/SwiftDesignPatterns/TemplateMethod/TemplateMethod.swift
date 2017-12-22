@@ -28,7 +28,24 @@ extension TemplateMethodProtocol {
 }
 
 
-class ConcreteClass1: TemplateMethodProtocol {
+protocol TemplateAbstrctMethodProtocl {
+    func abstractMethod()
+}
+
+
+//extension TemplateAbstrctMethodProtocl {
+//    func abstractMethod() {
+//        assertionFailure("must override by subclass")
+//    }
+//}
+
+
+class AbstractClass {
+    
+}
+
+
+class ConcreteClass1:AbstractClass, TemplateAbstrctMethodProtocl, TemplateMethodProtocol {
     
     var name: String?
     
