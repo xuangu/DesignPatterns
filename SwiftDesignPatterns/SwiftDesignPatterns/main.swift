@@ -17,7 +17,11 @@ example(of: "Singleton") {
     Singleton.testcase()
 }
 
+print("Hello, World!")
 
+let singleton = Singleton.singleton
+
+singleton.description()
 
 
 
