@@ -21,6 +21,7 @@ protocol TemplateMethodProtocol {
 
 extension TemplateMethodProtocol {
     // 在extension中增加final关键字是没有用的
+    // 通过将模板方法实现在模板方法协议中，替代类似Java中在抽象类中定义抽象方法，并通过抽象类中的模板方法减少冗余的做法
     func templateMethod() {
         method1()
         method2()
@@ -28,24 +29,7 @@ extension TemplateMethodProtocol {
 }
 
 
-protocol TemplateAbstrctMethodProtocl {
-    func abstractMethod()
-}
-
-
-//extension TemplateAbstrctMethodProtocl {
-//    func abstractMethod() {
-//        assertionFailure("must override by subclass")
-//    }
-//}
-
-
-class AbstractClass {
-    
-}
-
-
-class ConcreteClass1:AbstractClass, TemplateAbstrctMethodProtocl, TemplateMethodProtocol {
+class ConcreteClass1: TemplateMethodProtocol {
     
     var name: String?
     
