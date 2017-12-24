@@ -8,12 +8,14 @@
 
 import Foundation
 
-print("Hello, World!")
+public func example(of description: String, action: () -> Void) {
+    print("\n--- Example of:", description, "---")
+    action()
+}
 
-let singleton = Singleton.singleton
-
-singleton.description()
-
+example(of: "Singleton") {
+    Singleton.testcase()
+}
 
 
 

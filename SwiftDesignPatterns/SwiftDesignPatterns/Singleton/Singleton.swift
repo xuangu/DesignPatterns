@@ -8,8 +8,6 @@
 
 import Foundation
 
-//let globalSingleton = Singleton();
-
 final class Singleton {
     
     static let singleton = Singleton()
@@ -25,9 +23,7 @@ final class Singleton {
     }
     
     func addDescription(_ desc: String) -> Void {
-//        weak var weakSelf = self
         runQueue.async { [weak self] in
-            // weakSelf?.data.append(desc)
             self?.data.append(desc)
         }
     }
@@ -36,7 +32,9 @@ final class Singleton {
         print("this is a singleton object")
     }
     
-    func test() {
+    class func testcase() {
+        let singleton = Singleton.singleton
         
+        singleton.description()
     }
 }
