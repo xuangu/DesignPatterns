@@ -10,7 +10,6 @@
 		C868B0A21FEB65440019D4C9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C868B0A11FEB65440019D4C9 /* Product.swift */; };
 		C8DDC0CA1FE2CCE000AD9505 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DDC0C91FE2CCE000AD9505 /* main.swift */; };
 		C8DDC0D21FE2CD2C00AD9505 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DDC0D11FE2CD2C00AD9505 /* Singleton.swift */; };
-		C8DDC0D51FEC014400AD9505 /* AbstractTemplateMethodClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DDC0D41FEC014400AD9505 /* AbstractTemplateMethodClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +29,6 @@
 		C8DDC0C61FE2CCE000AD9505 /* SwiftDesignPatterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftDesignPatterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DDC0C91FE2CCE000AD9505 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C8DDC0D11FE2CD2C00AD9505 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		C8DDC0D41FEC014400AD9505 /* AbstractTemplateMethodClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractTemplateMethodClass.swift; path = ../../../../../Documents/AbstractTemplateMethodClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				C868B0A01FEB60760019D4C9 /* FactoryMethod */,
-				C8DDC0D31FEC00FF00AD9505 /* TemplateMethod */,
 				C8DDC0D01FE2CD1000AD9505 /* Singleton */,
 				C8DDC0C91FE2CCE000AD9505 /* main.swift */,
 			);
@@ -85,14 +82,6 @@
 				C8DDC0D11FE2CD2C00AD9505 /* Singleton.swift */,
 			);
 			path = Singleton;
-			sourceTree = "<group>";
-		};
-		C8DDC0D31FEC00FF00AD9505 /* TemplateMethod */ = {
-			isa = PBXGroup;
-			children = (
-				C8DDC0D41FEC014400AD9505 /* AbstractTemplateMethodClass.swift */,
-			);
-			path = TemplateMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DDC0CA1FE2CCE000AD9505 /* main.swift in Sources */,
-				C8DDC0D51FEC014400AD9505 /* AbstractTemplateMethodClass.swift in Sources */,
 				C8DDC0D21FE2CD2C00AD9505 /* Singleton.swift in Sources */,
 				C868B0A21FEB65440019D4C9 /* Product.swift in Sources */,
 			);
